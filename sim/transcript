@@ -1,0 +1,370 @@
+# Compile of Mux.sv failed with 1 errors.
+# Compile of Mux.sv was successful.
+# Compile of Logic.sv failed with 4 errors.
+# Compile of Logic.sv failed with 4 errors.
+# Compile of Logic.sv failed with 2 errors.
+# Compile of Logic.sv was successful.
+# Compile of Arithmetic.sv failed with 1 errors.
+# Compile of Arithmetic.sv failed with 6 errors.
+# Compile of Arithmetic.sv was successful.
+# Compile of Arithmetic.sv was successful.
+# Compile of Mock1.sv was successful.
+# Compile of Mock1_tb.sv failed with 3 errors.
+# Compile of Mock1_tb.sv failed with 1 errors.
+# Compile of Mock1_tb.sv was successful.
+# Compile of Mock1_tb.sv was successful.
+vsim -gui work.Mock1_tb
+# vsim -gui work.Mock1_tb 
+# Start time: 23:16:20 on May 09,2022
+# Loading sv_std.std
+# Loading work.Mock1_tb
+# Loading work.Mock1
+# Loading work.Arithmetic
+# ** Error: (vsim-3033) Instantiation of 'full_adder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Mock1_tb/mock1/Ar1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Test/Mock1/src/Arithmetic.sv Line: 20
+#         Searched libraries:
+#             C:/Users/sangt/OneDrive/Project/Job/RMIT/Test/Mock1/sim/work
+# Loading work.Logic
+# Loading work.Mux
+# Error loading design
+# End time: 23:16:21 on May 09,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 23
+# Compile of Arithmetic.sv was successful.
+# Compile of Arithmetic.sv was successful.
+vsim -gui work.Mock1_tb
+# vsim -gui work.Mock1_tb 
+# Start time: 23:19:11 on May 09,2022
+# Loading sv_std.std
+# Loading work.Mock1_tb
+# Loading work.Mock1
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.Logic
+# Loading work.Mux
+add wave -position insertpoint  \
+sim:/Mock1_tb/Ai \
+sim:/Mock1_tb/Bi \
+sim:/Mock1_tb/Ci \
+sim:/Mock1_tb/clk \
+sim:/Mock1_tb/Cout \
+sim:/Mock1_tb/ECout \
+sim:/Mock1_tb/EFi \
+sim:/Mock1_tb/Fi \
+sim:/Mock1_tb/i \
+sim:/Mock1_tb/M \
+sim:/Mock1_tb/S0 \
+sim:/Mock1_tb/S1
+run
+add wave -position insertpoint  \
+sim:/Mock1_tb/i
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+restart
+run
+# Compile of Mock1_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+run
+# [time =60]Wrong Value: Instruction:22
+# [time =100]Wrong Value: Instruction:34
+# [time =140]Wrong Value: Instruction:34
+# Compile of Mock1_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+run
+# [time =80]Wrong Value: Instruction:22
+# [time =120]Wrong Value: Instruction:34
+# [time =160]Wrong Value: Instruction:34
+# Compile of Mock1_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+run
+# [time =100]Wrong Value: Instruction:22
+# [time =140]Wrong Value: Instruction:34
+# [time =180]Wrong Value: Instruction:34
+# Compile of Mux.sv was successful.
+# Compile of Logic.sv was successful.
+# Compile of Arithmetic.sv was successful.
+# Compile of Mock1.sv was successful.
+# Compile of Mock1_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+# Loading work.Mock1
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.Logic
+# Loading work.Mux
+run
+# [time =100]Wrong Value: Instruction:22
+# [time =140]Wrong Value: Instruction:34
+# [time =180]Wrong Value: Instruction:34
+# Compile of Mock1_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+run
+# [time =125]Wrong Value: Instruction:22
+# [time =175]Wrong Value: Instruction:34
+# [time =225]Wrong Value: Instruction:34
+# Compile of Mock1_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+run
+# [time =175]Wrong Value: Instruction:110100
+# [time =225]Wrong Value: Instruction:110100
+restart
+run
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =325]Wrong Value: Instruction:111001
+# WARNING: No extended dataflow license exists
+restart
+run
+# [time =325]Wrong Value: Instruction:111001
+# [time =475]Wrong Value: Instruction:100101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+restart
+run
+# [time =475]Wrong Value: Instruction:100101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+add wave -position insertpoint  \
+sim:/Mock1_tb/mock1/Ar1/FA/a \
+sim:/Mock1_tb/mock1/Ar1/FA/b \
+sim:/Mock1_tb/mock1/Ar1/FA/cin \
+sim:/Mock1_tb/mock1/Ar1/FA/cout \
+sim:/Mock1_tb/mock1/Ar1/FA/sum
+restart
+run
+# [time =475]Wrong Value: Instruction:100101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+restart
+run
+# [time =475]Wrong Value: Instruction:110101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Mux.sv was successful.
+# Compile of Logic.sv was successful.
+# Compile of Arithmetic.sv was successful.
+# Compile of Mock1.sv was successful.
+# Compile of Mock1_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+# Loading work.Mock1
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.Logic
+# Loading work.Mux
+run
+# [time =475]Wrong Value: Instruction:110101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:110101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+add wave -position insertpoint  \
+sim:/Mock1_tb/mock1/Ar1/Ain \
+sim:/Mock1_tb/mock1/Ar1/Bin \
+sim:/Mock1_tb/mock1/Ar1/Cin
+restart
+run
+# [time =475]Wrong Value: Instruction:110101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:110101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:110101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+restart
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+restart
+# Compile of Arithmetic.sv failed with 1 errors.
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+add wave -position insertpoint  \
+sim:/Mock1_tb/mock1/Ar1/Sel
+restart
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Mux.sv was successful.
+# Compile of Logic.sv was successful.
+# Compile of Arithmetic.sv was successful.
+# Compile of Mock1.sv was successful.
+# Compile of Mock1_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Mock1_tb
+# Loading work.Mock1
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.Logic
+# Loading work.Mux
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+# [time =575]Wrong Value: Instruction:110111
+# [time =625]Wrong Value: Instruction:011111
+# Compile of Arithmetic.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+run
+# [time =475]Wrong Value: Instruction:000101
+# [time =525]Wrong Value: Instruction:111101
+# [time =625]Wrong Value: Instruction:011111
+restart
+run
+# [time =525]Wrong Value: Instruction:111101
+# [time =625]Wrong Value: Instruction:011111
+restart
+run
+# Compile of Mux_tb.sv was successful.
+vsim work.Mux_tb
+# End time: 08:04:26 on May 10,2022, Elapsed time: 8:45:15
+# Errors: 0, Warnings: 4
+# vsim work.Mux_tb 
+# Start time: 08:04:26 on May 10,2022
+# Loading sv_std.std
+# Loading work.Mux_tb
+# Loading work.Mux
+add wave -position insertpoint  \
+sim:/Mux_tb/F \
+sim:/Mux_tb/G \
+sim:/Mux_tb/H \
+sim:/Mux_tb/M
+run
+# Compile of Mux_tb.sv was successful.
+# Compile of Logic_tb.sv was successful.
+vsim work.Logic_tb
+# End time: 08:11:43 on May 10,2022, Elapsed time: 0:07:17
+# Errors: 0, Warnings: 4
+# vsim work.Logic_tb 
+# Start time: 08:11:43 on May 10,2022
+# Loading sv_std.std
+# Loading work.Logic_tb
+# Loading work.Logic
+add wave -position insertpoint  \
+sim:/Logic_tb/Ai \
+sim:/Logic_tb/Bi \
+sim:/Logic_tb/H \
+sim:/Logic_tb/S0 \
+sim:/Logic_tb/S1
+run
+# Compile of Arithmetic_tb.sv was successful.
+vsim work.Arithmetic_tb
+# End time: 08:23:05 on May 10,2022, Elapsed time: 0:11:22
+# Errors: 0, Warnings: 3
+# vsim work.Arithmetic_tb 
+# Start time: 08:23:05 on May 10,2022
+# Loading sv_std.std
+# Loading work.Arithmetic_tb
+# Loading work.Arithmetic
+# Loading work.full_adder
+# Loading work.half_adder
+add wave -position insertpoint  \
+sim:/Arithmetic_tb/Ai \
+sim:/Arithmetic_tb/Bi \
+sim:/Arithmetic_tb/Ci \
+sim:/Arithmetic_tb/clk \
+sim:/Arithmetic_tb/Co \
+sim:/Arithmetic_tb/ECo \
+sim:/Arithmetic_tb/EH \
+sim:/Arithmetic_tb/H \
+sim:/Arithmetic_tb/S0 \
+sim:/Arithmetic_tb/S1
+run
