@@ -1,0 +1,84 @@
+|Mock1
+Ai => Ai.IN2
+Bi => Bi.IN2
+Ci => Ci.IN1
+S1 => S1.IN2
+S0 => S0.IN2
+M => M.IN1
+Cout <= Arithmetic:Ar1.Co
+Fi <= Mux:mux1.F
+
+
+|Mock1|Arithmetic:Ar1
+Ai => Mux0.IN1
+Ai => Mux0.IN2
+Ai => Mux0.IN3
+Ai => Mux0.IN4
+Ai => Mux0.IN5
+Ai => Mux0.IN6
+Ai => Mux0.IN0
+Ai => Mux1.IN4
+Bi => Mux0.IN7
+Bi => Mux1.IN5
+Bi => Mux1.IN6
+Bi => Mux1.IN7
+Bi => Mux1.IN2
+Bi => Mux1.IN3
+Ci => Mux0.IN10
+Ci => Mux1.IN10
+Ci => Decoder0.IN2
+S1 => Mux0.IN8
+S1 => Mux1.IN8
+S1 => Decoder0.IN0
+S0 => Mux0.IN9
+S0 => Mux1.IN9
+S0 => Decoder0.IN1
+H <= full_adder:FA.sum
+Co <= full_adder:FA.cout
+
+
+|Mock1|Arithmetic:Ar1|full_adder:FA
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.sum
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mock1|Arithmetic:Ar1|full_adder:FA|half_adder:h1
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mock1|Arithmetic:Ar1|full_adder:FA|half_adder:h2
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mock1|Logic:log1
+Ai => H.IN0
+Ai => H.IN0
+Ai => H.IN0
+Bi => H.IN1
+Bi => H.IN1
+Bi => H.IN1
+S1 => Mux0.IN4
+S0 => Mux0.IN5
+H <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mock1|Mux:mux1
+G => F.DATAB
+H => F.DATAA
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+M => F.OUTPUTSELECT
+
+
